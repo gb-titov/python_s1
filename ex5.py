@@ -9,11 +9,14 @@ def get_user_input_as_int(msg):
     print(msg, end='')
     return int(input())
 
+
 x1 = get_user_input_as_int('1 точка X: ')
 y1 = get_user_input_as_int('1 точка Y: ')
 x2 = get_user_input_as_int('2 точка X: ')
 y2 = get_user_input_as_int('2 точка Y: ')
 
-distance = round(sqrt(((x2-x1)**2) + ((y2-y1)**2)), 2)
+distance = round(sqrt(((x2-x1)**2) + ((y2-y1)**2)), 10)
 
-print(f"A ({x1},{y1}); B ({x2},{y2}) -> {distance}")
+print(f"A ({x1},{y1}); B ({x2},{y2}) -> {distance : 2f}")
+
+print('{:.2f}'.format(5.099020))

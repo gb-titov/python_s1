@@ -16,6 +16,7 @@ def get_plane_num(x, y):
         return 4
     return 'Точка находится на оси'
 
+
 print('Введите Х:', end=' ')
 x = int(input())
 print('Введите Y:', end=' ')
@@ -24,8 +25,3 @@ y = int(input())
 plane = get_plane_num(x, y)
 
 print(f'x={x}; y={y} -> {plane}')
-
-
-
-
-
